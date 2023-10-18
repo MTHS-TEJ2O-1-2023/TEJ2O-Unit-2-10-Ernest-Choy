@@ -5,8 +5,6 @@
  * This program turns on the neopixels depending on the lightLevel
 */
 
-let lightvalue: number
-lightvalue = input.lightLevel()
 let neoPixelStrip: neopixel.Strip = null
 
 // Clean up
