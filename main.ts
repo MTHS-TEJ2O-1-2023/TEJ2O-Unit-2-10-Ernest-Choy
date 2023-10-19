@@ -18,8 +18,8 @@ neoPixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
 // cut all colors
-basic.forever(function() {
-
+basic.forever(function () {
+  // if light level is less than 51
   if (input.lightLevel() <= 51) {
     neoPixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neoPixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -28,6 +28,7 @@ basic.forever(function() {
     neoPixelStrip.show()
   }
 
+  // if light level is more than 52
   if (input.lightLevel() >= 52) {
     neoPixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     neoPixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -35,7 +36,7 @@ basic.forever(function() {
     neoPixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neoPixelStrip.show()
   }
-
+  // if light level is more than 104
   if (input.lightLevel() > 104) {
     neoPixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     neoPixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
@@ -44,6 +45,7 @@ basic.forever(function() {
     neoPixelStrip.show()
   }
 
+  // if light level is more than 156
   if (input.lightLevel() > 156) {
     neoPixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     neoPixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
@@ -52,6 +54,7 @@ basic.forever(function() {
     neoPixelStrip.show()
   }
 
+  // if light level is more than 208
   if (input.lightLevel() > 208) {
     neoPixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
     neoPixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
